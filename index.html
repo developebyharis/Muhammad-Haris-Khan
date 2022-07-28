@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title of the browser tab -->
+        <title>Muhammad Haris Khan</title>
+        <!-- favicon -->
+        <link rel="icon" href="img/image_processing20200921-4441-cen0dg (1)_auto_x2.png">
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Heebo:wght@600&family=Josefin+Sans:wght@500&family=Metal+Mania&family=Mr+Dafoe&family=Mulish:wght@200&family=Poppins&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Heebo:wght@600&family=Hind&family=Josefin+Sans:wght@500&family=Metal+Mania&family=Mr+Dafoe&family=Mulish:wght@200&family=Poppins&family=Roboto&family=Roboto+Mono:wght@300;400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/b609776124.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Heebo:wght@600&family=Josefin+Sans:wght@500&family=Metal+Mania&family=Mr+Dafoe&family=Mulish:wght@200&family=Poppins&family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+        <!-- css libraries file -->
+        <link rel="stylesheet" href="css/libraries.min.css">
+        <!-- bootstrap css file -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- main style file -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="app">
+            <div id="app-inner" ref="appRef" :class="[savedTheme, {'enable-focus-style': isAnyFocus}]" @click="isAnyFocus = false" @keyup.tab="isAnyFocus = true">
+                <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
+                <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
+                <!-- start preloader-->
+                <div class="preloader" ref="preloader">
+                    <div class="preloader-content">
+                        <div class="logo">
+                            <img src="img/image_processing20200921-4441-cen0dg (1)_auto_x2.png" alt="Logo">
+                            </p>
+                        </div>
+                        <div class="loading-bar">
+                            <span class="loading-bar-progress"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end preloader-->
+                <!-- start of header -->
+                <header class="hide-in-preloading" :class="{
+          'big-header': isHeaderBig,
+          'small-header': !isHeaderBig,
+          'header-hidden': isHeaderHidden
+        }">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="logo" title="Haris">
+                               <a href="index.html">
+                                <img src="img/image_processing20200921-4441-cen0dg (1)_auto_x2.png" alt="Logo">
+                               </a>
+                        </div>
+                        <!-- nav links -->
+                        <nav :class="{'menu-open': isNavMenuOpen}" ref="headerNav">
+                            <!-- nav menu links -->
+                            <ul class="nav-links">
+                                <li v-for="link in navLinks" :key="link.url">
+                                    <a :href="link.url" @click="closeNavMenu">{{ link.title.en }}
+                  </a>
+                                </li>
+                            </ul>
+                            <!-- menu content in big devices (hidden in mobile/tablet) -->
+                            <div class="desktop-menu-content" tabindex="-1">
+                                <div class="container">
+                                    <!-- about us -->
+                                    <div class="about-us">
+                                        <p>I love making things simple, intuitive and expertly crafted!
+                    </p>
+                                        <h4 class="block-title">Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!
+                    </h4>
+                                    </div>
+                                    <!-- contact info -->
+                                    <ul class="contact-info row">
+                                        <li class="col-lg-4">
+                                            <h4 class="block-title">Email</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="mailto:helloworldtoharis@gmail.com">helloworldtoharis@gmail.com</a>
+                                                </li>
+                                                <!-- <li><a href="mailto:support@nafie.com">support@nafie.com</a></li> -->
+                                            </ul>
+                                        </li>
+                                        <li class="col-lg-4">
+                                            <h4 class="block-title">Address</h4>
+                                            <ul>
+                                                <li>
+                                                    Gulberg no.2 Saddar Peshawar Cantt, Pakistan ,
+                          <br>Gulabad No.1
+                        
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-lg-4">
+                                            <h4 class="block-title">Phone</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="tel:923239112233">(92) 323 9112233</a>
+                                                </li>
+                                                <!-- <li><a href="tel:02966202291">(02) 966 202 291</a></li> -->
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
