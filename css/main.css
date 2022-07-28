@@ -120,6 +120,7 @@ Created:    22/2022
 .light_theme {
   --main-color-five: var(--light-color);
   --main-color-six: var(--dark-l);
+  --main-color-last: var(--border-color);
   --main-color-one: var(--primary-color);
   --main-color-three: var(--border-color);
   --main-color-four: var(--dark-color);
@@ -138,6 +139,7 @@ Created:    22/2022
 }
 
 .dark_theme {
+  --main-color-last: var(--light-color);
   --main-color-one: var(--primary-color);
   --amin-color-six: var(--drop-shadow);
   --main-color-five: var(--border-color);
@@ -1650,7 +1652,7 @@ html[dir=rtl] .has-ultimate-tooltip .ultimate-tooltip-arrow {
 .circle-cursor.circle-cursor-outer {
   height: 30px;
   width: 30px;
-  border: 1px solid hsl(var(--main-color-three));
+  border: 1px solid hsl(var(--main-color-last));
   opacity: 0.5;
   -webkit-transition: all 0.08s ease-out;
   transition: all 0.08s ease-out;
@@ -1658,7 +1660,7 @@ html[dir=rtl] .has-ultimate-tooltip .ultimate-tooltip-arrow {
 .circle-cursor.circle-cursor-inner {
   height: 6px;
   width: 6px;
-  background-color: hsl(var(--main-color-three));
+  background-color: hsl(var(--main-color-last));
   -webkit-transition: top 0.02s ease-out, left 0.02s ease-out, height 0.2s ease-in-out, width 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: top 0.02s ease-out, left 0.02s ease-out, height 0.2s ease-in-out, width 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
