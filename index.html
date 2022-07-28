@@ -23,6 +23,14 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <!-- main style file -->
         <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("gLg3W7GtrnViPh76y");
+   })();
+</script>
     </head>
     <body>
         <div id="app">
@@ -487,11 +495,11 @@
                             </div>
                             <!-- contact form -->
                             <div class="col-lg-6">
-                                <form ref="contactForm" class="contact-form form-styled" action="contact_form.php" data-success-msg="Message sent successfully!" data-err-msg="Oops! something went wrong, please try again.">
+                                <form ref="contactForm" class="contact-form form-styled" action="mailto:developewithharis@gmail.com" data-success-msg="Message sent successfully!" data-err-msg="Oops! something went wrong, please try again." >
                                     <div class="group">
                                         <label>Name</label>
                                         <div class="control has-prefix-icon">
-                                            <input type="text" name="name" placeholder="e.g. John Doe" minlength="3" required>
+                                            <input type="text" name="name" placeholder="e.g. John Doe" id="fullName" minlength="3" required>
                                             <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
                                             <!-- validation errors messages -->
                                             <div class="errors-msgs">
@@ -503,7 +511,7 @@
                                     <div class="group">
                                         <label>Email</label>
                                         <div class="control has-prefix-icon ">
-                                            <input class="ltr-dir" type="email" inputmode="email" name="email" placeholder="e.g. john.doe@gmail.com" required>
+                                            <input class="ltr-dir" type="email" inputmode="email" name="email" id="email_id" placeholder="e.g. john.doe@gmail.com" required>
                                             <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
                                             <!-- validation errors messages -->
                                             <div class="errors-msgs">
@@ -517,7 +525,7 @@
                                             Phone <span class="optional">(Optional)</span>
                                         </label>
                                         <div class="control has-prefix-icon">
-                                            <input type="tel" inputmode="tel" name="phone" placeholder="Phone Number">
+                                            <input type="tel" inputmode="tel" name="phone" id="phone" placeholder="Phone Number">
                                             <i class="fa fa-phone prefix-icon"></i>
                                             <!-- validation errors messages -->
                                             <div class="errors-msgs">
@@ -532,13 +540,13 @@
                                             <i class="fa fa-comment prefix-icon"></i>
                                             <!-- validation errors messages -->
                                             <div class="errors-msgs">
-                                                <input class="required" type="hidden" value="Message is required">
+                                                <input class="required" type="hidden" id="message" value="Message is required">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="group">
                                         <div class="control">
-                                            <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation">Send</button>
+                                            <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation" >Send</button>
                                         </div>
                                     </div>
                                 </form>
@@ -587,7 +595,11 @@
                     <span></span>
                 </div>
             </div>
+
         </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
         <!-- js plugins file -->
         <script src="scripts/plugins.min.js"></script>
         <script src="https://use.fontawesome.com/b609776124.js"></script>
