@@ -23,6 +23,14 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <!-- main style file -->
         <link rel="stylesheet" href="css/main.css">
+
+        <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+ </script>
+
+<script type="text/javascript">
+  emailjs.init('gLg3W7GtrnViPh76y')
+</script>
     </head>
     <body>
         <div id="app">
@@ -217,7 +225,7 @@
                             <!-- about image -->
                             <div class="about-img col-lg-6">
                                 <div class="layer" v-clone>
-                                    <img src="/img/Remini20211024140726226-removebg-preview.png" alt="User Name">
+                                    <img src="img/haris about.png" alt="User Name">
                                 </div>
                             </div>
                             <!-- text box -->
@@ -487,14 +495,14 @@
                             </div>
                             <!-- contact form -->
                             <div class="col-lg-6">
-                                <!-- <form ref="contactForm" class="contact-form form-styled" action="mailto:developewithharis@gmail.com" data-success-msg="Message sent successfully!" data-err-msg="Oops! something went wrong, please try again." >
+                                <form ref="contactForm" id="contactForm" class="contact-form form-styled" action="mailto:developewithharis@gmail.com" data-success-msg="Message sent successfully!" data-err-msg="Oops! something went wrong, please try again." >
                                     <div class="group">
                                         <label>Name</label>
                                         <div class="control has-prefix-icon">
                                             <input type="text" name="name" placeholder="e.g. John Doe" id="fullName" minlength="3" required>
-                                            <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i> -->
+                                            <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
                                             <!-- validation errors messages -->
-                                            <!-- <div class="errors-msgs">
+                                            <div class="errors-msgs">
                                                 <input class="required" type="hidden" value="Name is required">
                                                 <input class="minLength" type="hidden" value="Name must be at least 3 characters">
                                             </div>
@@ -504,9 +512,9 @@
                                         <label>Email</label>
                                         <div class="control has-prefix-icon ">
                                             <input class="ltr-dir" type="email" inputmode="email" name="email" id="email_id" placeholder="e.g. john.doe@gmail.com" required>
-                                            <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i> -->
+                                            <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
                                             <!-- validation errors messages -->
-                                            <!-- <div class="errors-msgs">
+                                            <div class="errors-msgs">
                                                 <input class="required" type="hidden" value="Email is required">
                                                 <input class="invalid" type="hidden" value="Please enter a valid email address">
                                             </div>
@@ -518,9 +526,9 @@
                                         </label>
                                         <div class="control has-prefix-icon">
                                             <input type="tel" inputmode="tel" name="phone" id="phone" placeholder="Phone Number">
-                                            <i class="fa fa-phone prefix-icon"></i> -->
+                                            <i class="fa fa-phone prefix-icon"></i>
                                             <!-- validation errors messages -->
-                                            <!-- <div class="errors-msgs">
+                                            <div class="errors-msgs">
                                                 <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
                                             </div>
                                         </div>
@@ -529,9 +537,9 @@
                                         <label>Message</label>
                                         <div class="control has-prefix-icon">
                                             <textarea name="message" placeholder="Write message..." required="text"></textarea>
-                                            <i class="fa fa-comment prefix-icon"></i> -->
-                                            <!-- validation errors messages -->
-                                            <!-- <div class="errors-msgs">
+                                            <i class="fa fa-comment prefix-icon"></i>
+                                             <!-- validation errors messages  -->
+                                            <div class="errors-msgs">
                                                 <input class="required" type="hidden" id="message" value="Message is required">
                                             </div>
                                         </div>
@@ -541,36 +549,7 @@
                                             <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation" >Send</button>
                                         </div>
                                     </div>
-                                </form> -->
-
-
-
-                                <form id="emailForm">
-                                    <div class="field">
-                                      <label for="from_name">from_name</label>
-                                      <input type="text" name="from_name" id="from_name">
-                                    </div>
-                                    <div class="field">
-                                      <label for="to_name">to_name</label>
-                                      <input type="text" name="to_name" id="to_name">
-                                    </div>
-                                    <div class="field">
-                                      <label for="email_id">email_id</label>
-                                      <input type="text" name="email_id" id="email_id">
-                                    </div>
-                                    <div class="field">
-                                      <label for="message">message</label>
-                                      <input type="text" name="message" id="message">
-                                    </div>
-                                  
-                                    <input type="submit" id="buttonn" value="Send Email" >
-                                  </form>
-                                  
-                                
-                                  
-                                  
-                                  
-                                 
+                                </form> 
                             </div>
                         </div>
                     </div> 
@@ -618,13 +597,7 @@
             </div>
 
         </div>
-        <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
- </script>
-
-<script type="text/javascript">
-  emailjs.init('gLg3W7GtrnViPh76y')
-</script>
+        
 
         <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
         <!-- js plugins file -->

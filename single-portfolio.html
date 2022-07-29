@@ -72,11 +72,10 @@
               <!-- nav menu links -->
               <ul class="nav-links">
                 <li v-for="link in navLinks" :key="link.url">
-                  <a :href="link.url" @click="closeNavMenu">
-                    {{ link.title.en }}
-                  </a>
+                    <a :href="link.url" @click="closeNavMenu">{{ link.title.en }}
+  </a>
                 </li>
-              </ul>
+            </ul>
 
               <!-- menu content in big devices (hidden in mobile/tablet) -->
               <div class="desktop-menu-content" tabindex="-1">
