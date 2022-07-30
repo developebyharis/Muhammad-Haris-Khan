@@ -3205,26 +3205,26 @@ html[dir=rtl] .hero-section .scroll-down:after {
   background-color: hsl(var(--main-color-three));
   color: hsl(var(--main-color-four));
 }
-.statistics-section .section-content .statistics-items li:nth-of-type(1) .icon img {
+/* .statistics-section .section-content .statistics-items li:nth-of-type(1) .icon img { */
   /* -webkit-filter: var(--filter-invert-true);
           filter: var(--filter-invert-true); */
-}
+/* } */
 .statistics-section .section-content .statistics-items li:nth-of-type(2) .icon {
   background-color: hsl(var(--main-color-three));
   color: hsl(var(--main-color-four));
 }
-.statistics-section .section-content .statistics-items li:nth-of-type(2) .icon img {
+/* .statistics-section .section-content .statistics-items li:nth-of-type(2) .icon img { */
   /* -webkit-filter: invert(1);
           filter: invert(1); */
-}
+/* } */
 .statistics-section .section-content .statistics-items li:nth-of-type(3) .icon {
   background-color: hsl(var(--main-color-three));
   color: hsl(var(--main-color-four));
 }
-.statistics-section .section-content .statistics-items li:nth-of-type(3) .icon img {
+/* .statistics-section .section-content .statistics-items li:nth-of-type(3) .icon img { */
   /* -webkit-filter: var(--main-color-four);
           filter: var(--main-color-three); */
-}
+/* } */
 .statistics-section .section-content .statistics-items li:hover a {
   margin-top: -15px;
 }
