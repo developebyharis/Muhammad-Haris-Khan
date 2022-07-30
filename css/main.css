@@ -4125,16 +4125,16 @@ html[dir=rtl] .contact-section .section-content .contact-form .phone-number .fa 
             justify-content: center;
   }
 }
-.portfolio-page .portfolio-items .work-tools li {
+.portfolio-page .portfolio-items  .work-tools li {
   margin-bottom: 5px;
 }
-html[dir=ltr] .portfolio-page .portfolio-items .work-tools li:not(:last-of-type) {
+html[dir=ltr] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type) {
   margin-right: 5px;
 }
-html[dir=rtl] .portfolio-page .portfolio-items .work-tools li:not(:last-of-type) {
+html[dir=rtl] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type) {
   margin-left: 5px;
 }
-.portfolio-page .portfolio-items .work-tools li a {
+.portfolio-page .portfolio-items  .work-tools li a {
   display: block;
   background-color: hsl(var(--main-color-four));
   color: hsl(var(--main-color-five));
@@ -4174,6 +4174,15 @@ html[dir=rtl] .portfolio-page .portfolio-items .work-tools li:not(:last-of-type)
 }
 .not-found-page .not-found-content .not-found-text {
   margin-bottom: 30px;
+}
+
+.live {
+  background-color: hsl(var(--main-color-four));
+  color: hsl(var(--main-color-five));
+  pointer-events: none;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  /* width: 20px; */
 }
 
 
