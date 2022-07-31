@@ -2332,7 +2332,7 @@ header .options-icons .lang-switcher .lang-switcher-menu .sub-menu .menu-item:fo
             transform: translate(0, 0);
   }
 }
-header .options-icons .theme-switcher button {
+header .options-icons .theme-switcher  button {
   position: relative;
   height: 28px;
   width: 48px;
@@ -4070,14 +4070,14 @@ html[dir=rtl] .contact-section .section-content .contact-text .social {
   margin: 0 5px 10px;
   border-radius: 50%;
 }
-.contact-section .section-content .contact-text .social li a:hover {
+.contact-section .section-content .contact-text  li a:hover {
   background-color: hsl(var(---main-color-four));
   color: hsl(var(--light-color));
 }
 .contact-section .section-content .contact-text .social li a:focus {
   outline: none;
 }
-.enable-focus-style .contact-section .section-content .contact-text .social li a:focus {
+.enable-focus-style .contact-section .section-content .contact-text  li a:focus {
   -webkit-box-shadow: 0 0 0 3px hsla(var(--main-color-two), 70%);
           box-shadow: 0 0 0 3px hsla(var(--main-color-two), 70%);
 }
@@ -4177,13 +4177,24 @@ html[dir=rtl] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type
 }
 
 .live {
-  background-color: hsl(var(--main-color-four));
-  color: hsl(var(--main-color-five));
+  background-color: black;
+  color: white;
   pointer-events: none;
-  border-radius: 30px;
-  margin-bottom: 30px;
-  /* width: 20px; */
+  margin-right: 10px;
 }
+
+#toggle a {
+  cursor: pointer;
+}
+
+
+.bi-volume-up-fill {
+  font-size: 24px;
+  color: hsla(var(--main-color-four));
+  margin-right: 10px;
+}
+
+
 
 
 
