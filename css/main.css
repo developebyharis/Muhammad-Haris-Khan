@@ -4177,14 +4177,18 @@ html[dir=rtl] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type
 }
 
 .live {
-  background-color: hsl(var(--main-color-four));
-  color: hsl(var(--main-color-five));
+  background-color:black;
+  color: white;
   pointer-events: none;
-  border-radius: 30px;
-  margin-bottom: 30px;
-  /* width: 20px; */
+  margin-right: 10px;
 }
+.fa-github {
+  margin-left: 10px;
+}
+.fa-eye {
+  margin-left: 10px;
 
+}
 
 
 
