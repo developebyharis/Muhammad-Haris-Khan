@@ -3,7 +3,7 @@
 ** Table of Contents:                                                                       **
 **********************************************************************************************
 
-Project:    HARSI KHAN
+Project:    HARIS KHAN
 Version:    3.0.0
 Created:    22/2022
 
@@ -4182,13 +4182,17 @@ html[dir=rtl] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type
   pointer-events: none;
   margin-right: 10px;
 }
-.fa-github {
-  margin-left: 10px;
-}
-.fa-eye {
-  margin-left: 10px;
 
+
+
+#toggle a {
+  cursor: pointer;
 }
 
+.bi-volume-up-fill {
+  font-size: 24px;
+  color: hsla(var(--main-color-four));
+  margin-right: 10px;
+}
 
 
