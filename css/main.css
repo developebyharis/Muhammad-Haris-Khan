@@ -1937,6 +1937,7 @@ html[dir=rtl] header nav .desktop-menu-content .about-us p {
 header nav .desktop-menu-content .about-us .block-title {
   font-size: 2.8rem;
   line-height: 4rem;
+  font-family: 'Aboreto', cursive;
 }
 header nav .desktop-menu-content .contact-info li .block-title {
   position: relative;
