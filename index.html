@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- title of the browser tab -->
         <title>Haris Khan</title>
+        <!-- Change the browser color -->
+        <!-- <meta name="theme-color"  content="white">  -->
+        <!-- <meta name="theme-color"  content="black"> -->
         <!-- favicon -->
         <link rel="icon" href="img/image_processing20200921-4441-cen0dg (1)_auto_x2.png">
         <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Heebo:wght@600&family=Josefin+Sans:wght@500&family=Metal+Mania&family=Mr+Dafoe&family=Mulish:wght@200&family=Poppins&family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -79,6 +82,7 @@
                   </a>
                                 </li>
                             </ul>
+
                             <!-- menu content in big devices (hidden in mobile/tablet) -->
                             <div class="desktop-menu-content" tabindex="-1">
                                 <div class="container">
@@ -89,6 +93,8 @@
                                         <h4 class="block-title">Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!
                     </h4>
                                     </div>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
                                     <!-- contact info -->
                                     <ul class="contact-info row">
                                         <li class="col-lg-4">
@@ -123,13 +129,7 @@
                         </nav>
                         <!-- options icons -->
                         <ul class="options-icons">
-                            
-
-                                <audio id="music" src="http://www.sousound.com/music/healing/healing_01.mp3">
-                                </audio>
-                                   
-                                   <a onClick="togglePlay()" id="toggle" data-text-swap="music on"><i class="bi bi-volume-up-fill"></i></a>
-                            <!-- theme switcher button -->
+                                
                             <li class="theme-switcher">
                                 <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
                             </li>
@@ -158,7 +158,6 @@
               <br>Creative Website
             
                         </h2>
-                        <!-- <h4 class="heading me-2">I Am <span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span> -->
                         <a href="#contact" class="btn">Get In Touch </a>
                     </div>
                     <div class="social">
@@ -387,10 +386,8 @@
                                             <img :src="work.imgUrl" :alt="work.title.en">
                                         </div>
                                         <div class="item-details">
-                                            <button class="btn live">Live<i class="fa fa-eye"></i></button>
-                                            <button class="btn live">View code <i class="fa fa-github"></i> </button>
-                                            <!-- <h3 class="title">{{ work.title.en }}</h3>
-                                            <div class="date">{{ work.date.en }}</div> -->
+                                            <h3 class="title">{{ work.title.en }}</h3>
+                                            <div class="date">{{ work.date.en }}</div>
                                         </div>
                                     </a>
                                 </li>
