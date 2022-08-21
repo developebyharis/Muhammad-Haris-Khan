@@ -2,11 +2,9 @@
 /*********************************************************************************************
 ** Table of Contents:                                                                       **
 **********************************************************************************************
-
 Project:    HARIS KHAN
 Version:    3.0.0
 Created:    22/2022
-
 1.  Color Codes
     ------------------------------
     1.  Primary Color
@@ -18,14 +16,12 @@ Created:    22/2022
     7.  Warning Color
     8.  Info Color
     ------------------------------
-
 2.  Fonts Family
     ------------------------------
     1.  Logo Font
     2.  Headings Font
     3.  Body Font
     ------------------------------
-
 3.  Animations
     ------------------------------
     1.  Zoom Effects
@@ -40,10 +36,8 @@ Created:    22/2022
     10. Shine Effects
     11. Floating Effect
     ------------------------------
-
 4.  Reset & Global elements
     ------------------------------
-
 5.  UI Elements Styles
     ------------------------------
     1.  Forms
@@ -51,7 +45,6 @@ Created:    22/2022
     3.  Custom Tooltip
     4.  Ultimate Tooltip
     ------------------------------
-
 6.  Components Styles
     ------------------------------
     1.  Circle Cursor
@@ -62,14 +55,12 @@ Created:    22/2022
     6.  Ajax Loading
     7.  Toast Notifications
     ------------------------------
-
 7.  Pages Styles
     ------------------------------
     1.  Homepage
     2.  Single Portfolio
     3.  Not Found (404)
     ------------------------------
-
 *********************************************************************************************/
 /*-----------------------------------------------------------------------------------------*/
 /* 1. Color Codes */
@@ -1829,7 +1820,7 @@ header .logo h1:focus-within {
 }
 header nav .nav-links li a {
   color: hsl(var(--t-color-one));
-  font-family: var(--headings-font-family);
+  /* font-family: var(--headings-font-family); */
   font-weight: bold;
   padding: 0.4rem 0.2rem;
 }
@@ -3023,12 +3014,12 @@ html[dir=ltr] .hero-section .hero-text h2 {
 }
 @media (min-width: 992px) {
   .hero-section .hero-text .btn {
-    color: hsl(var(--light-color));
-    border-color: hsl(var(--light-color));
+    color: hsl(var(--dark-color));
+    border-color: hsl(var(--dark-color));
   }
   .hero-section .hero-text .btn:hover {
-    background-color: hsl(var(--light-color));
-    color: hsl(var(--dark-color));
+    background-color: hsl(var(--dark-color));
+    color: hsl(var(--light-color));
     text-shadow: none;
   }
 }
@@ -4184,8 +4175,6 @@ html[dir=rtl] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type
   margin-right: 10px;
 }
 
-
-
 #toggle a {
   cursor: pointer;
 }
@@ -4195,5 +4184,3 @@ html[dir=rtl] .portfolio-page .portfolio-items  .work-tools li:not(:last-of-type
   color: hsla(var(--main-color-four));
   margin-right: 10px;
 }
-
-
