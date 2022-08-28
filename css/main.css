@@ -2936,7 +2936,7 @@ html[dir=rtl] .notifications-container .notify-leave-active {
 }
 .hero-section .hero-img .layer img {
   display: block;
-  /* -webkit-filter: drop-shadow(2px 4px 4px black); */
+  -webkit-filter: drop-shadow(2px 4px 4px black);
           filter: drop-shadow(0px 0px 0px );
 }
 @media (min-width: 992px) {
@@ -2967,12 +2967,12 @@ html[dir=rtl] .notifications-container .notify-leave-active {
   .hero-section .hero-text {
     position: absolute;
     z-index: 3;
-    top: 45%;
+    top: 66%;
     width: 90%;
-    text-shadow: 0px 0px 20px hsl(var(--main-color-three));
+    text-shadow: 0px 0px 10px hsl(var(--main-color-three));
   }
   html[dir=ltr] .hero-section .hero-text {
-    left: 50%;
+    left: 51.6%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -2985,18 +2985,22 @@ html[dir=rtl] .notifications-container .notify-leave-active {
 @media (max-width: 991px) {
   .hero-section .hero-text {
     width: 90vw;
+    margin-top: -40px;
+    margin-left: 35px;
+
   }
 }
 .hero-section .hero-text h2 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 html[dir=ltr] .hero-section .hero-text h2 {
   text-transform: capitalize;
 }
 @media (min-width: 992px) {
   .hero-section .hero-text h2 {
-    color: hsl(var(--light-color)) !important;
+    color: hsl(var(--bg-color-four)) !important;
     font-size: 3rem;
+
   }
 }
 @media (max-width: 991px) {
@@ -3007,23 +3011,23 @@ html[dir=ltr] .hero-section .hero-text h2 {
 }
 @media (min-width: 992px) {
   .hero-section .hero-text .btn {
-    color: hsl(var(--dark-color));
-    border-color: hsl(var(--dark-color));
+    color: hsl(var(--bg-color-four));
+    border-color: hsl(var(--main-color-four));
   }
   .hero-section .hero-text .btn:hover {
-    background-color: hsl(var(--dark-color));
-    color: hsl(var(--light-color));
+    background-color: hsl(var(--main-color-four));
+    color: hsl(var(--main-color-three));
     text-shadow: none;
   }
 }
 @media (max-width: 991px) {
   .hero-section .hero-text .btn {
-    color: hsl(var(--bg-color-reverse));
-    border-color: hsl(var(--bg-color-reverse));
+    color: hsl(var(--bg-color-four));
+    border-color: hsl(var(--bg-color-four));
   }
   .hero-section .hero-text .btn:hover {
-    background-color: hsl(var(--bg-color-reverse));
-    color: hsl(var(--bg-color-one));
+    background-color: hsl(var(--bg-color-four));
+    color: hsl(var(--bg-color-four));
   }
 }
 .hero-section .hero-text .btn:focus {
